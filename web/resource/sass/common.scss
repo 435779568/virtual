@@ -1,0 +1,72 @@
+@import 'color';
+@import 'var';
+//margin-r
+@for $i from -20 through 20 {
+  .m-r-#{$i*5} { margin-right: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .m-l-#{$i*5} { margin-left: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .m-t-#{$i*5} { margin-top: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .m-b-#{$i*5} { margin-bottom: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .p-r-#{$i*5} { padding-right: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .p-l-#{$i*5} { padding-left: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .p-t-#{$i*5} { padding-top: 1px * $i*5; }
+}
+
+@for $i from -20 through 20 {
+  .p-b-#{$i*5} { padding-bottom: 1px * $i*5; }
+}
+
+@for $i from 10 through 20 {
+  .fs-#{$i} { font-size: 1px * $i; }
+}
+
+@each $key,$value in $colorList {
+  .text-#{$key} {
+    color:#{$value};
+  }
+}
+
+@each $key,$value in $colorList {
+  .bg-#{$key} {
+    background-color:#{$value};
+  }
+}
+
+@each $key,$value in $colorList {
+  .b-#{$key} {
+    border-color:#{$value};
+  }
+}
+
+
+.cursor{
+  cursor:pointer;
+}
+
+
+
+.b-r{border-right:1px solid}
+
+.no-b-r{border-radius:0}
+
+.full-width{width:100%}
+
+.inline{display:inline-block!important}
+

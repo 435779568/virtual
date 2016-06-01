@@ -1,0 +1,48 @@
+{% extends "layout/account.layout.html"  %}  
+{% block title %}
+	
+{% endblock %}	
+
+{% block body %}
+	{% include 'widgets/header.widgets.html' %}
+	<div class="content overflow-hidden submit">
+		<div class="login-bg full-width" style="background:url('/resource/image/login-bg.jpg')">
+			<div class="login-modal  bg-white pull-left" >
+				<div class='login-header bg-gray'>
+					<span>
+					<img class="pull-left m-r-10" src="/resource/image/login-bg.jpg">
+					登录淘不锈网
+					</span>
+				</div>
+				<div class="col-md-12 m-t-20">
+					<form action="" method="post" class="clearfix">
+						<div class="col-md-12 m-t-20  p-r-15 p-l-15">
+					      <input type="text" class="form-control  no-b-r input-lg steel-username" placeholder="用户名">
+					      <i class="fa fa-user"></i>
+					    </div>
+					    <div class="col-md-12 m-t-20 p-r-15 p-l-15">
+					      <input type="password" class="form-control  no-b-r input-lg steel-password" placeholder="密码">
+					      <i class="fa fa-lock"></i>
+					    </div>
+					    <div class="col-md-12 m-t-20 p-r-15 p-l-15 fs-10 clearfix ">
+					    	<p class="pull-left cursor steel-remember
+					    	">
+					    		<input id="remember" type="checkbox" class="pull-left m-r-5 steel-checkbox">
+					    		<label for="remember" class="cursor text-gray pull-left">记住我</label>
+				    		</p>
+					    	<a class="pull-right">忘记密码？</a>
+					    </div>
+					    <div class="col-md-12 m-t-20 p-r-15 p-l-15">
+					    	<button type="submit" class="btn btn-primary btn-block">登录</button>
+					    </div>
+					    <div class="col-md-12 m-t-20 p-r-15 p-l-15 fs-10 clearfix ">
+					    	<a class="pull-right">没有帐号,去注册</a>
+					    </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'widgets/footer.widgets.html' %}
+
+{% endblock %}	
